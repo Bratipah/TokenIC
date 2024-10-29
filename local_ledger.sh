@@ -5,8 +5,8 @@
 # dfx identity use minter
 # export MINTER=$(dfx identity get-principal)
 
-# export TOKEN_NAME="Livr"
-# export TOKEN_SYMBOL="Livr"
+# export TOKEN_NAME="tkn"
+# export TOKEN_SYMBOL="TokenIC"
 # export TOKEN_IMAGE_URL="""
 # https://github.com/amschel99/DSTC/blob/master/src/DSTC_frontend/public/logo.jpeg 
  # Replace with actual image URL
@@ -57,8 +57,8 @@ dfx identity new minter
 dfx identity use minter  
 export MINTER=$(dfx identity get-principal)  
 
-export TOKEN_NAME="Livr"  # Change the token name here 
-export TOKEN_SYMBOL="LIVR"  # Change token symbol here 
+export TOKEN_NAME="tkn"  # Change the token name here 
+export TOKEN_SYMBOL="TokenIC"  # Change token symbol here 
 export TOKEN_IMAGE_URL="https://github.com/amschel99/DSTC/blob/master/src/DSTC_frontend/public/logo.jpeg" 
 dfx identity use default  
 export DEFAULT=$(dfx identity get-principal)  
@@ -71,7 +71,7 @@ dfx identity use archive_controller
 export ARCHIVE_CONTROLLER=$(dfx identity get-principal)  
 export TRIGGER_THRESHOLD=10000  
 export NUM_OF_BLOCK_TO_ARCHIVE=5000  
-export CYCLE_FOR_ARCHIVE_CREATION=1000000000000
+export CYCLE_FOR_ARCHIVE_CREATION=10000000000
 
 export FEATURE_FLAGS=true # Set the feature flags to true
 
